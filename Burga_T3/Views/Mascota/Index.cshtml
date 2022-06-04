@@ -1,0 +1,71 @@
+﻿
+
+
+           <a href="/Mascota/CrearRegistro">Crear registro</a> 
+                 
+                <table class="default">
+
+                    <tr>
+
+                        <th>Id</th>
+
+                        <th>Fecha de registro</th>
+
+                        <th>Nombre de la mascota</th>
+
+                        <th>Fecha nacimiento de la mascota</th>
+
+                        <th>Sexo</th>
+
+                        <th>Especie</th>
+
+                        <th>Raza</th>
+
+                        <th>Tamaño</th>
+
+                        <th>Descripcion</th>
+
+                        <th>Nombre del dueño</th>
+
+                        <th>Direccion del dueño</th>
+
+                        <th>Telefono</th>
+
+                        <th>Mail</th>
+
+                    </tr>
+                    @foreach (var item1 in ViewBag.registros)
+                    {
+
+                        <tr>
+
+                            <td>@item1.Id</td>
+
+                            <td>@item1.fechaRegistro</td>
+
+                            <td>@item1.NombreMascota</td>
+
+                            <td>@item1.FechaNacimiento</td>
+
+                            <td>@item1.Sexo</td>
+
+                            <td>@item1.Especie</td>
+
+                            <td>@item1.Raza</td>
+
+                            <td>@item1.Tamano</td>
+
+                            <td>@item1.DatosParticulares</td>
+
+                            <td>@item1.NombreDueno</td>
+
+                            <td>@item1.DireccionDueno</td>
+
+                            <td>@item1.Telefono</td>
+
+                            <td>@item1.Mail</td>
+
+                        </tr>
+                    }
+                </table>
+

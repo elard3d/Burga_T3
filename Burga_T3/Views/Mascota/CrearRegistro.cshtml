@@ -1,0 +1,62 @@
+﻿<div class="row">
+    <div class="col-8" style="background-color: #fff">
+        <form action="/Mascota/CrearRegistroA" method="post">
+
+            <h2>Crear Nueva Registro !!!</h2>
+            <input type="text" placeholder="Nombre de la mascota" name="NombreMascota" required value="">
+
+            <br>
+
+            <input type="date" placeholder="Fecha de nacimiento" name="FechaNacimiento" required value="">
+
+            <br>
+            <select name="Sexo">
+                @foreach (var item in @ViewBag.sexo)
+                {
+                    <option value="@item">@item</option>
+                }
+
+                <br>
+            </select>
+            <select name="Especie">
+                @foreach (var item in @ViewBag.especie)
+                {
+                    <option value="@item">@item</option>
+                }
+            </select>
+
+            <br>
+            <select name="Raza">
+                @foreach (var item in @ViewBag.raza)
+                {
+                    <option value="@item">@item</option>
+                }
+            </select>
+            <br>
+            <input type="number" placeholder="Tamaño" name="Tamano" required value="">
+
+
+            <br>
+            <textarea  placeholder="Descripcion" name="DatosParticulares" required value=""></textarea>
+
+            <br>
+            <input type="text" placeholder="Nombre del dueño" name="NombreDueno" required value=""/>
+
+            <br>
+            <input type="text" placeholder="direccion del dueño" name="DireccionDueno" required value=""/>
+
+            <br>
+            <input type="text" placeholder="Telefono" name="Telefono" required value=""/>
+
+            <br>
+            <input type="email" placeholder="Mail" name="Mail" required value=""/>
+
+
+            <br>
+
+            <button class="btn">Guardar</button>
+
+        </form>
+
+    </div>
+</div>
